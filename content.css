@@ -1,0 +1,416 @@
+@charset "utf-8"; /* 字符编码  */
+/*设置内容盒子的外边距*/
+.content{
+    margin: 20px auto;
+}
+/*设置焦点图盒子的高、定位*/
+.banner{
+    position: relative;/*父元素相对定位*/
+    height: 285px;
+}
+/*设置“传智播客”文字的大小、间距*/
+.banner b{
+    letter-spacing:4px;
+    font-size: 24px;
+}
+/*设置焦点图右侧盒子的样式：*/
+.banner_right{
+    position: absolute;/*子元素绝对定位*/
+    right: 0;
+    top: 0;
+	/*宽高、字体大小、颜色、内边距、背景颜色*/
+    width: 235px;
+    height: 245px;
+    color: #FFF;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 40px;
+    background-color: #3C3C3C;
+}
+.banner_right p:nth-of-type(3){
+    text-indent:2em;
+}
+/*设置焦点图数字的样式*/
+.digital li{
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+    color: rgb(255,105,0);
+    background-color:#FFF;
+}
+.digital li:nth-of-type(1){
+    color: #FFF;
+    background-color: rgb(255,114,2);
+}
+/*设置焦点图左边文字、图片的样式*/
+.banner_text{/*上部分*/
+    text-align: right;
+    font-size: 15px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 70px;
+    right: 280px;
+}
+.subtext{/*下部分*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/*图片*/
+.banner_img{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/*设置公告盒子的样式*/
+.bulletin{
+    width: 1000px;
+    height: 40px;
+    position: relative;
+}
+/* 左侧栏模块 */
+.left_side{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+}
+.left_side p{
+    position: absolute;
+    line-height: 40px;
+    color: #FFF;
+    left: 40px;
+}
+/* 左侧栏文字模块图片 样式：  */
+.left_side_img{
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(45,45,45);
+}
+.left_side_icon_one{
+    position: absolute;
+    text-align: center;
+    left: 20px;
+    top: 10px;
+    line-height: 7px;
+    width: 15px;
+    height: 15px;
+    background-color: #666666;
+}
+.left_side_icon_two{
+    position: absolute;
+    left: 60px;
+    top: 35px;
+}
+/*左侧栏文字盒子样式*/
+.left_side li{
+    width: 90px;
+    height: 20px;
+    background-color: #FF4200;
+}
+.list{
+  position: absolute;
+    top: 60px;
+    height: 180px;
+
+}
+.list li{
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden;
+    margin-left: 10px;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(228,228,288);
+    display: inline-block;
+}
+/* 主体盒子 */
+.subject{
+    position: relative;
+}
+/* 动态 盒子样式： */
+.dynamic{
+    position: absolute;
+    top: 0;
+    left: 215px;
+    width: 500px;
+    height: 37px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-bottom:2px solid #FF4200;
+}
+/* 动态导航栏 模块 p的样式：  */
+.dynamic_nav p{
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    width: 80px;
+    height: 40px;
+    display: inline-block;
+}
+/* 动态导航栏 模块 选择第1个p的样式：  */
+.dynamic_nav p:nth-of-type(1){
+    margin-left: 15px;
+    color: #FFFFFF;
+    background-image:url("http://47.101.40.234/wp-content/uploads/2019/05/right_message.png");
+}
+/* 动态导航栏 模块 选择第3个p的样式：  */
+.dynamic_nav p:nth-of-type(3){
+    line-height: 15px;
+    border-radius:5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+    font-size: 11px;
+    border: 1px solid #3C3C3C;
+    width: 40px;
+    height: 15px;
+}
+/*  新闻 模块 样式： */
+.news{
+    position: absolute;
+    top: 39px;
+    left: 0;
+    width: 500px;
+    height: 200px;
+}
+/* 新闻图片 模块 样式： */
+.news a{
+    margin-top: 28px;
+    display: inline-block;
+    width: 120px;
+    height: 160px;
+    background-color: rgba(255,255,255,0.8);
+    border: 1px solid  #000;
+
+}
+.news img{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.news_list{
+    list-style-position: inside;
+
+    position: absolute;
+    top: 70px;
+    left: 130px;
+}
+.news_list a{
+    display: inline-block;
+    width: 4px;
+    height: 8px;
+    margin-right: 10px;
+    background: url("http://47.101.40.234/wp-content/uploads/2019/05/icon_bg.gif") no-repeat 0 -90px;
+}
+.news_list li{
+    width: 350px;
+    height: 30px;
+    line-height: 30px;
+
+}
+.news_list span{
+    font-size: 13px;
+}
+.news_list span:nth-of-type(2){
+    float: right;
+}
+.right_side{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 270px;
+    height: 355px;
+
+}
+.class{
+   padding: 25px 0 25px 20px;
+    font-size: 18px;
+}
+.class span{
+
+}
+.right_class ol{
+    list-style-type:none;
+}
+.right_class li{
+    position: relative;
+    width: 220px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #666666;
+
+}
+.right_class p{
+    position: absolute;
+    top: 6px;
+    left: -3px;
+    display: inline-block;
+    width: 6px;
+    height: 20px;
+}
+.right_class span{
+    padding-left:10px ;
+}
+.blue p{
+    background-color: blue;
+}
+.green p{
+    background-color: green;
+}
+.red p{
+    background-color: red;
+}
+.purple p{
+    background-color: purple;
+}
+.yellow p{
+    background-color: yellow;
+}
+/*设置“招聘信息盒子的样式*/
+.hires{
+    position: relative;
+    width: 200px;
+    height: 250px;
+
+}
+.hires_top,.capital_top,.stats_top,.resources_top{
+    line-height: 40px;
+    height: 40px;
+    border: 1px solid #666666;
+    border-bottom: 2px solid #666666;
+}
+.hires_top a{
+    display: inline-block;
+    width: 18px;
+    height: 15px;
+    background: url("http://47.101.40.234/wp-content/uploads/2019/05/icon_bg.gif") no-repeat 2px -150px;;
+}
+.hires_top h3{
+    display: inline-block;
+}
+.hires ol a{
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    background: url("http://47.101.40.234/wp-content/uploads/2019/05/icon_bg.gif") no-repeat -60px -27px;
+}
+.hires li{
+    height: 40px;
+}
+.hires p{
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 12px;
+}
+/*设置“师资力量”盒子的样式*/
+.capital{
+    position: absolute;
+    left: 213px;
+    top: 0;
+    width: 500px;
+    height: 250px;
+
+}
+.capital_top a{
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background: url("http://47.101.40.234/wp-content/uploads/2019/05/icon_bg.gif") no-repeat 2px -180px;
+}
+.capital_top h3,.p{
+    display: inline-block;
+}
+.capital li{
+    margin-top: 20px;
+    margin-left: 23px;
+    display: inline-block;
+}
+.platform{
+    margin-top: 30px;
+    position: absolute;
+    top: 90px;
+    right: -287px;
+    width: 270px;
+    height: 130px;
+
+}
+/*设置“数据统计”盒子的样式*/
+.bottom{
+    position: relative;
+    margin-top: 20px;
+    width: 1000px;
+    height: 200px;
+
+}
+
+.stats{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+.stats_top{
+    height: 40px;
+}
+.stats_top a{
+    display: inline-block;
+    margin-right: 5px;
+    width: 20px;
+    height: 16px;
+    background: url("http://47.101.40.234/wp-content/uploads/2019/05/icon_bg.gif") no-repeat -30px -60px
+}
+.stats_top h3,p{
+    display: inline-block;
+}
+.stats_img{
+    width: 200px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.stats_img img{
+    display: inline-block;
+    margin-right: 10px;
+}
+/*设置“资源中心”盒子的样式*/
+.resources{
+    width: 780px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    left: 220px;
+
+}
+.resources_top{
+
+}
+.resources_top h3,a{
+    display: inline-block;
+}
+.resources_top a{
+    width: 15px;
+    height: 12px;
+    background: url("http://47.101.40.234/wp-content/uploads/2019/05/icon_bg.gif") no-repeat -30px -90px;
+}
+.resources_img ol{
+     margin-top: 20px;
+ }
+.resources_img li{
+    display: inline-block;
+}
+.resources_img img{
+    margin-left: 45px;
+    display: block;
+}
+.resources_img p{
+    width: 75px;
+    text-align: center;
+    margin-left: 45px;
+}

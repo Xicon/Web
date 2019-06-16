@@ -1,0 +1,68 @@
+@charset "utf-8"; /* 字符编码  */
+
+/* 顶部盒子 样式：设置相对定位 宽度 水平居中 */
+.header{
+	position: relative;
+	margin: 50px auto 15px;
+}
+/*  logo图片模块 样式：设置 宽度 */
+.logo{
+	height: 68px;
+}
+/* 设为首页模块 样式: 设置 绝对定位 底部偏移 右偏移*/
+.top_text_1{
+	position: absolute;
+	bottom: 0;
+	right: 200px;
+}
+/* 加入收藏模块 样式: 设置 绝对定位 底部偏移 右偏移 */
+.top_text_2{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+/*  logo模块 样式:设为首页图标模块 样式: 设置 宽度 高度 转为行间元素 左浮动 顶部外边距 右外边距 */
+.logo span{
+	width:17px;
+	height:14px;
+	display: inline;
+	float: left;
+	margin-top: 5px;
+	margin-right:5px;
+}
+/*  logo设为首页图标模块 样式: 导入背景图片 平铺方式 X,Y轴位置  */
+.logo span{
+	background: url(http://47.101.40.234/wp-content/uploads/2019/05/icon_bg.gif) no-repeat  0 0;
+}
+/*  logo加入收藏模块 导入背景图片 平铺方式 X,Y轴位置  */
+.top_text_2 span{
+	background: url(http://47.101.40.234/wp-content/uploads/2019/05/icon_bg.gif) no-repeat  0 -31px;
+}
+/* 导航栏盒子 样式: 设置宽度 高度 背景颜色  */
+.nav{
+	width: 100%;
+	height: 40px;
+	background-color: black;
+}
+/*  导航栏模块 样式: 设置 高度 */
+.nav_kii{
+	margin: 0 auto;
+	height: 40px;
+}
+/*  导航栏模块 列表样式:  */
+.nav li{
+	width: 90px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	text-align: center;
+}
+/* 导航栏模块 首页文字样式:  设置左外边距  背景颜色 */
+.index{
+	margin-left: 20px;
+	background-color: #FF4200;
+}
+/* 导航栏模块 a标签样式:  设置字体颜色 */
+.nav_kii a{
+	color: #FFF;
+}

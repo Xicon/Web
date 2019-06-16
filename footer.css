@@ -1,0 +1,55 @@
+/* 字符编码  */
+@charset "utf-8";
+/*设置底部盒子的样式：宽高、背景、居中*/
+.footer{
+	text-align: center;
+	width: 100%;
+	height: 250px;
+	background-color: rgb(48,48,48);
+}
+/*设置底部第二个盒子的样式：宽高、居中*/
+.acc{
+	margin: 0 auto;
+	width: 1000px;
+	height: 200px;
+}
+/*设置底部左边小盒子的样式：父元素相对定位；图片、文字子元素绝对定位；*/
+.top_btn{
+	position: relative;
+}
+.top_btn img{
+	position: absolute;
+	top: 0;
+}
+.top_btn p{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+/*设置底部中间盒子的样式*/
+.acc_img{
+	width: 1000px;
+	display: inline-block;
+
+}
+/*设置底部中间盒子中的小盒子的样式*/
+.acc_img li{
+	width: 150px;
+	height: 52px;
+	display: inline-block;
+}
+/*设置底部左边小盒子和图片文字的样式*/
+.top_btn p{
+	position: absolute;
+	left: 145px;
+}
+.top_btn img{
+	position: absolute;
+	top: 0;
+	left: 100px;
+	margin-left: 50px;
+}
+/*设置最底部文字的样式*/
+.footer_text{
+	text-align: center;
+}

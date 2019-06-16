@@ -1,0 +1,55 @@
+@charset "utf-8"; /* 字符编码  */
+/* 滚动文字实现方法 */
+/*设置公告盒子的宽、上外边距、下外边距、边框、超出内容隐藏*/
+.bulletin{
+    width: 1000px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #666666;
+    overflow: hidden;
+}
+/*设置“通知公告”的样式：子元素绝对定位、行高、居中、右边框、宽、高*/
+.bulletin_text{
+    position: absolute;
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px solid #666666;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 40px;
+}
+/*设置滚动文字的宽高、行高、子元素绝对定位、左内边距、文字大小、颜色、布局、文字滚动*/
+.animate{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 0;
+    padding-left: 900px;
+    font-size: 16px;
+    color: #000;
+    display: inline-block;
+    white-space: nowrap;
+    animation: 10s wordsLoop linear infinite normal;
+}
+@keyframes wordsLoop {
+    0% {
+        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+}
+@-webkit-keyframes wordsLoop {
+    0% {
+        transform: translateX(1000px);
+        -webkit-transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+}
